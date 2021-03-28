@@ -1,0 +1,52 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>hello</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    </head>
+<body>
+    <div class="login-box">
+        <h1>DIABETES</h1>
+        <h2>RandomForestClassifier</h2>
+        <form action="calculate">
+            <div class="user-box">
+                <input type="text" name="exp1" value="{{exp1}}"  required="">
+                <label>Pregnancies</label>   
+            </div>
+            <div class="user-box">
+                <input type="text" name="exp2" value="{{exp2}}" required="">
+                <label>Glucose</label>
+             </div>
+            <div class="user-box">
+                <input type="text" name="exp3" value="{{exp3}}" required=""> 
+                <label>BloodPressure</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="exp4" value="{{exp4}}" required="">
+                <label>SkinThickness</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="exp5" value="{{exp5}}" required="">
+                <label>Insulin</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="exp6" value="{{exp6}}" required="">
+                <label>BMI</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="exp7" value="{{exp7}}" required="">
+                <label>PedigreeFunction</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="exp8" value="{{exp8}}" required="">
+                <label>Age</label>
+            </div>
+            <input type="submit" name="submit" value="predict" class="submitbtn" />
+        </form><br>
+        <h2>Result is : {{predicted}}</h2>
+    </div>
+</body>
+
+</html>
+
